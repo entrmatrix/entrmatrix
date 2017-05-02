@@ -1,0 +1,6 @@
+﻿Following needs to be implemented:
+1. Hash table using:
+	a. Arrays
+	b. Linked Lists
+2. ArrayList(dynamically resizing array)
+3. StringBuilder (or StringBuffer)
