@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{824D0EAC-E6ED-4D5C-86F1-8BA4B72DDC0D}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{5AE2FDC2-F6EB-4598-98C1-5F1760E21CEB}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ConsoleApplication1</RootNamespace>
-    <AssemblyName>ConsoleApplication1</AssemblyName>
+    <RootNamespace>DataStructuresPart1</RootNamespace>
+    <AssemblyName>DataStructuresPart1</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,21 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Arrays.cs" />
+    <Compile Include="HashTables\Hashing.cs" />
+    <Compile Include="HashTables\HashTable.cs" />
+    <Compile Include="HashTables\HashTableArray.cs" />
+    <Compile Include="HashTables\HashTableArrayNode.cs" />
+    <Compile Include="HashTables\HashTableNodePair.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary1\HashTables.csproj">
-      <Project>{5ae2fdc2-f6eb-4598-98c1-5f1760e21ceb}</Project>
-      <Name>HashTables</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ClassLibrary3\AlgoLibrary.csproj">
-      <Project>{fa74777a-5584-4d76-af76-3b77ae893391}</Project>
-      <Name>AlgoLibrary</Name>
-    </ProjectReference>
+    <Content Include="ToDos.txt" />
+    <Content Include="ReadMe.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
